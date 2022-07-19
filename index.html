@@ -7,8 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <!-- ===== Style Switcher ===== -->
+    <link rel="stylesheet" href="CSS/skins/color-1.css" class="alternate-style" title="color-1" >
+    <link rel="stylesheet" href="CSS/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="CSS/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/skins/style-switcher.css">
 </head>
 <body>
 <!--===== Main Container Start =====-->
@@ -22,18 +28,18 @@
             <span></span>
         </div>
         <ul class="nav">
-            <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-            <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
     </div>
     <!--===== Aside End =====-->
     <!--===== Main Content Start =====-->
     <div class="main-content">
         <!--===== Home Section Start =====-->
-        <section class="home section ">
+        <section class="home section " id="home">
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
@@ -51,7 +57,7 @@
         </section>
         <!--===== Home Section End =====-->
         <!--===== About Section Start =====-->
-        <section class="about section ">
+        <section class="about section " id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -237,7 +243,7 @@
         </section>
         <!--===== About Section End =====-->
         <!--===== Services Section Start =====-->
-        <section class="service section ">
+        <section class="service section " id="services">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -322,7 +328,7 @@
         </section>
         <!--===== Services Section End =====-->
         <!-- ===== Portfolio item Start =====-->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -394,7 +400,7 @@
         </section>
         <!-- ===== Portfolio Section End =====-->
         <!-- ===== Contact Section Start =====-->
-        <section class="contact section">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -466,7 +472,7 @@
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
-                               <button type="submit" class="btn">Send Message</button>
+                                <button type="submit" class="btn">Send Message</button>
                             </div>
                         </div>
                     </div>
@@ -479,7 +485,27 @@
 
 </div>
 <!--===== Main Container =====-->
+<!-- =====  Style Switcher Start ===== -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!-- =====  Style Switcher End ===== -->
 <!--===== JS Files =====-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="js/script.js"></script>
+<script src="js/style-switcher.js"></script>
 </body>
 </html>

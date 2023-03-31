@@ -35,7 +35,9 @@ body {
 ul {
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;

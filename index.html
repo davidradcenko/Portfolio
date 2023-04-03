@@ -5,10 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio: David Radchenko</title>
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
     <!-- ===== Style Switcher ===== -->
+    <link rel="icon" href="portfolio.png">
     <link rel="stylesheet" href="CSS/skins/color-1.css" class="alternate-style" title="color-1">
     <link rel="stylesheet" href="CSS/skins/color-2.css" class="alternate-style" title="color-2" disabled>
     <link rel="stylesheet" href="CSS/skins/color-3.css" class="alternate-style" title="color-3" disabled>
@@ -28,11 +29,11 @@
             <span></span>
         </div>
         <ul class="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#services"><i class="fa fa-list"></i>Technologies</a></li>
-            <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+            <li id="li1"><a id="a1" href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li id="li2"><a id="a2" href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li id="li3"><a id="a3" href="#services"><i class="fa fa-list"></i>Technologies</a></li>
+            <li id="li4"><a id="a4" href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li id="li5"><a id="a5" href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
     </div>
     <!--===== Aside End =====-->
@@ -45,7 +46,7 @@
                     <div class="home-info padd-15">
                         <h3 class="hello">Hello, my name is <span class="name">David Radchenko</span></h3>
                         <h3 class="my-profession">I`m a <span class="typing">web Developer</span></h3>
-                        <p>I am a Junior React Developer. I am passionate about creating beautiful and functional web
+                        <p>I am a Junior+ React Developer. I am passionate about creating beautiful and functional web
                             applications using the latest technologies and programming techniques.... </p>
                         <a href="#contact" class="btn hire-me">Hire Me</a>
                     </div>
@@ -71,7 +72,8 @@
                                 <h3>I strive for constant growth how <span>Frontend Developer</span></h3>
                                 <p>I'm willing to learn new tools and technologies to stay up to date with the latest
                                     developments and best practices in development. I am sure that my skills and
-                                    experience provide a high level of results in working on your projects. <br><br> <span
+                                    experience provide a high level of results in working on your projects. <br><br>
+                                    <span
                                             class="Persanal-qualities">Personal qualities:</span>
                                     Efficiency, dedication, resistance to stress, ability to work in a team, discipline.
                                 </p>
@@ -138,10 +140,10 @@
                                         </div>
                                     </div>
                                     <div class="skill-item padd-15">
-                                        <h5>NodeJS</h5>
+                                        <h5>Html, Css</h5>
                                         <div class="progress">
-                                            <div class="progress-in" style="width: 76%;"></div>
-                                            <div class="skill-percent">60%</div>
+                                            <div class="progress-in" style="width: 90%;"></div>
+                                            <div class="skill-percent">90%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -230,8 +232,10 @@
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2023 -
                                                 </h3>
-                                                <h4 class="timeline-title">Develop own Website development, construction services</h4>
-                                                <p class="timeline-text">I am developing a complex service website for a construction companies.</p>
+                                                <h4 class="timeline-title">Develop own Website development, construction
+                                                    services</h4>
+                                                <p class="timeline-text">I am developing a complex service website for a
+                                                    construction companies.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +260,7 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <img src="images/react.png" alt="">
+                                <img class="imgTechnolojes" src="images/react.png" alt="">
                             </div>
                             <h4>React</h4>
                         </div>
@@ -266,7 +270,7 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                                <img src="images/typescript.png" alt="">
+                                <img class="imgTechnolojes" src="images/typescript.png" alt="">
                             </div>
                             <h4>TypeScript</h4>
                         </div>
@@ -308,7 +312,7 @@
                             <div class="icon">
                                 <img src="images/css.png" alt="">
                             </div>
-                            <h4>CSS</h4>
+                            <h4>Css</h4>
                         </div>
                     </div>
                     <!-- ===== Service item End =====-->
@@ -326,7 +330,7 @@
                     <div class="service-item padd-15">
                         <div class="service-item-inner">
                             <div class="icon">
-                               <img src="images/icons8-material-ui-48.png" alt="">
+                                <img src="images/icons8-material-ui-48.png" alt="">
                             </div>
                             <h4>Material UI</h4>
                         </div>
@@ -354,56 +358,45 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
+                                <a href="https://davidradcenko.github.io/TodolistImp/"><img
+                                        src="images/images-prodject/todolist.png" alt="todolist"></a>
                             </div>
+                            <div class="technologesInProdject">
+                                <img src="images/html-5-48.png" alt="">
+                                <img src="images/icons8-material-ui-48.png" alt="">
+                                <img class="imgTechnolojes" src="images/typescript.png" alt="">
+                                <img src="images/redux-48.png" alt="">
+                                <img class="imgTechnolojes" src="images/react.png" alt="">
+                                <img src="images/css.png" alt="">
+                                <img src="images/github-64.png" alt="">
+                            </div>
+
+
                         </div>
                     </div>
                     <!-- =====  portfolio item End =====-->
                     <!-- =====  portfolio item Start =====-->
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
+
                             <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
+                                <a href="https://davidradcenko.github.io/social-system/"><img
+                                        src="images/images-prodject/social-system.png" alt="social-system"></a>
+                            </div>
+                            <div class="technologesInProdject">
+
+                                <img class="imgTechnolojes" src="images/react.png" alt="">
+                                <img class="imgTechnolojes" src="images/typescript.png" alt="">
+                                <img src="images/redux-48.png" alt="">
+                                <img src="images/icons8-material-ui-48.png" alt="">
+                                <img src="images/css.png" alt="">
+                                <img src="images/github-64.png" alt="">
+                                <img src="images/html-5-48.png" alt="">
                             </div>
                         </div>
                     </div>
                     <!-- =====  portfolio item End =====-->
-                    <!-- =====  portfolio item Start =====-->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =====  portfolio item End =====-->
-                    <!-- =====  portfolio item Start =====-->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =====  portfolio item End =====-->
-                    <!-- =====  portfolio item Start =====-->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =====  portfolio item End =====-->
-                    <!-- =====  portfolio item Start =====-->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="images/lv7eSU5hI4c.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =====  portfolio item End =====-->
+
                 </div>
             </div>
         </section>
@@ -423,98 +416,58 @@
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-phone"></i></div>
                         <h4>Call Us On</h4>
-                        <p>+92 333022114</p>
+                        <p>+34 691 624 964 </p>
                     </div>
                     <!--===== Contact info item End =====-->
                     <!--===== Contact info item Start =====-->
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                        <h4>Office</h4>
-                        <p>Islamabad</p>
+                        <h4>Locate</h4>
+                        <p>Spain</p>
                     </div>
                     <!--===== Contact info item End =====-->
                     <!--===== Contact info item Start =====-->
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-envelope"></i></div>
                         <h4>Email</h4>
-                        <p>Davidradchenko2@gmail.com</p>
+                        <p>dvdradchenko@gmail.com</p>
                     </div>
                     <!--===== Contact info item End =====-->
                     <!--===== Contact info item Start =====-->
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-globe-europe"></i></div>
                         <h4>website</h4>
-                        <p>www.domain.com</p>
+                        <p><a href="https://www.linkedin.com/in/david-radchenko-spain">www.linkedin.com</a></p>
                     </div>
                     <!--===== Contact info item End =====-->
                 </div>
-                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                <h4 class="contact-sub-title padd-15">I`M VERY RESPOSIVE TO MESSAGES</h4>
-                <!-- ===== Contact Form ===== -->
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row">
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-        <!-- ===== Contact Section End =====-->
-    </div>
-    <!--===== Main Content End =====-->
+            <!--===== Main Content End =====-->
 
-</div>
-<!--===== Main Container =====-->
-<!-- =====  Style Switcher Start ===== -->
-<div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"></i>
     </div>
-    <div class="day-night s-icon">
-        <i class="fas "></i>
+    <!--===== Main Container =====-->
+    <!-- =====  Style Switcher Start ===== -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
     </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-</div>
-<!-- =====  Style Switcher End ===== -->
-<!--===== JS Files =====-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-<script src="js/script.js"></script>
-<script src="js/style-switcher.js"></script>
+    <!-- =====  Style Switcher End ===== -->
+    <!--===== JS Files =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>

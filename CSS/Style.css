@@ -45,7 +45,10 @@ html{
     padding: 0 30px;
     opacity: 1;
 }
-
+.imgTechnolojes{
+    width: 48px;
+    height: 48px;
+}
 .hidden {
     display: none !important;
 }
@@ -64,10 +67,19 @@ html{
     width: 100%;
     margin: auto;
 }
-
+.technologesInProdject{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.technologesInProdject img{
+    margin-left: 10px;
+}
 .section .container {
     padding-top: 60px;
-    padding-bottom: 70px;
+    /*padding-bottom: 70px;*/
 }
 .Persanal-qualities{
     color: #1000ff
@@ -550,7 +562,9 @@ h3.my-profession {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto 30px;
     text-align: center;
     transition: all 0.3S ease;
